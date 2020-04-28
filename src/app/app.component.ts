@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  ringWasPlaced(message: string) 
+  { console.log(`Put your hands up: ${message}`);
+}
 }
