@@ -6,14 +6,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 
 export class SingleComponent {
-  @Output() putRingOnit: EventEmitter<string>
+  @Output() putRingOnIt: EventEmitter<string>
 
   constructor() {
-    this.putRingOnit = new EventEmitter();
+    this.putRingOnIt = new EventEmitter();
   }
 
   liked(): void {
-    this.putRingOnit.emit('oh oh oh')
+    console.log('liked');
+    this.putRingOnIt.emit('oh oh oh')
   }
 
 }
